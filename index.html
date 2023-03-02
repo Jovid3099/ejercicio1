@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<script>
+			function primo(x) {
+				for (var i = 2; i < x; i++) {
+					if (x % i === 0) {
+						return false;
+					}
+				}
+				return x > 1;
+			}
+
+			let n = 1;
+			for (let x = 0; n <= 10; x++) {
+				if (primo(x)) {
+					document.write(n + '- El número ' + x + ' es primo <br>');
+					console.log(n + '- El número ' + x + ' es primo');
+					n++;
+				}
+			}
+		</script>
+		<title>Ejercicio 1</title>
+	</head>
+	<body></body>
+</html>
